@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>俺の最初のAIアプリ</title>
+
+    <style>
+        body {
+            font-family: sans-serif;
+            text-align: center;
+            margin-top: 100px;
+            background-color: #f5f5f5;
+        }
+
+        button {
+            font-size: 24px;
+            padding: 20px 40px;
+            cursor: pointer;
+        }
+
+        #message {
+            margin-top: 40px;
+            font-size: 28px;
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>断酒サポート</h1>
+
+    <button onclick="showMessage()">
+        酒が飲みたくなったら押す
+    </button>
+
+    <div id="message"></div>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").innerHTML =
+                "今の気持ちはお前の気持ちではない。<br>薬物が作り出した気持ちなのだ。";
+        }
+    </script>
+
+</body>
+</html>

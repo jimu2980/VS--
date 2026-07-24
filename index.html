@@ -44,9 +44,16 @@
 
     <script>
         function showMessage() {
-            document.getElementById("message").innerHTML =
-                "今の気持ちはお前の気持ちではない。<br>薬物が作り出した気持ちなのだ。";
-        }
+
+    const message = document.getElementById("message");
+
+    message.innerHTML =
+        "今の気持ちはお前の気持ちではない。<br>薬物が作り出した気持ちなのだ。";
+
+    setTimeout(function () {
+        message.innerHTML = "";
+    }, 3000);
+}
     </script>
 
 </body>
